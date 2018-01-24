@@ -6,7 +6,7 @@
 *ws,#service,,,,,"B509","0E",,,,,,
 *[SW],scan,,,SW,,,,,,,,,
 # ##### dia level 1 #####,,,,,,,,,,,,,
-r;wi,,PartloadHcKW,d.00 heating partload,,,,"0704",,,power,,,Heating part load
+r;wi,,PartloadHcKW,d.00 heating partload,,,,"6C00",,,power,,,Heating part load
 r;wi,,WPPostrunTime,d.01 central heating overruntime,,,,"F703",,,minutes0,,,water pump overrun time for heating mode
 r;wi,,BlockTimeHcMax,d.02 Max blocking time CH,,,,"0904",,,minutes0,,,max. burner anti cycling period at 20°C Flow temperature setpoint
 r,,HwcTemp,d.03 Temp DHW,,,,"1600",,,tempsensor,,,hot water flow temperature (combination boiler only)
