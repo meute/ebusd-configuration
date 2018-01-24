@@ -20,7 +20,8 @@ r,,WP,d.10 Central heating pump,,,,"4400",,,onoff,,,internal heating pump
 r,,extWP,d.11 external pump,,,,"3F00",,,onoff,,,External heating pump
 r,,Storageloadpump,d.12 storage load pump,,,,"9E00",,,percent0,,,tank load pump demand
 r,,CirPump,d.13 Circulation pump,,,,"7B00",,,onoff,,,Hot water circulation pump (via external module)
-r;wi,,PumpPowerDesired,d.14 Pump speed Setpoint,,,,"A100",,,UCH,0=auto;1=53;2=60;3=70;4=85;5=100,%,PWM pump speed
+r;wi,,WPPWMPowerDesired,d.14 Pump speed Setpoint,,,,"A100",,,UCH,0=auto;1=53;2=60;3=70;4=85;5=100,%,PWM pump speed
+r,,WPPWMPower,d.15 Actual Pump speed,,,,"7300",,,percent0,,,
 r,,DCRoomthermostat,d.16 room thermostat 24 V,,,,"0E00",,,onoff,,,External controls heat demand (Clamp 3'-4')
 r,,HwcDemand,d.22 DHW demand,,,,"5800",,,yesno,,,domestic hot water (tapping or tank contact) demand
 r,,HeatingSwitch,d.23 operation mode,,,,"F203",,,onoff,,,Wintermode active
