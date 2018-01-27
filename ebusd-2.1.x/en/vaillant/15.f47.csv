@@ -12,7 +12,7 @@ r;w,,RoomTempCorrection,RoomTempCorrection,,,,"5700",,,calibrations,,,room tempe
 r,,OutsideTemp,OutsideTempSensor,,,,"6200",,,tempsensor,,,current outdoor temperature and sensorstate
 r;w,,OutsideTempOffset,OutDoorTempCorr,,,,"5800",,,calibrations,,,outside temperature correction
 r,,DisplayedHc1RoomTempDesired,DisplayedHK1RoomSetpoint,,,,"9600",,,temp1,,,"0= >5°C, currently displayed room temperature setpoint"
-r;w,,Hc1OPMode,HC1_OPMode,,,,"2F00",,,UCH,2=auto;3=on;4=night;5=summer,,operation mode of the first heating circuit
+r;w,,Hc1OPMode,HC1_OPMode,,,,"2F00",,,UCH,0=off;1=manual;2=auto;3=on;4=night;5=summer,,operation mode of the first heating circuit
 r;w,,Hc1DayTemp,HC1_DaySetTemp,,,,"2700",,,temp1,,,day setpoint
 r;w,,Hc1NightTemp,HC1_NightSetTemp,,,,"3000",,,temp1,,,lowering temperature setpoint of the first heating circuit
 r,,Hc1QuickVetoTemp,HC1_QuickVetoTemp,,,,"3C00",,,temp1,,,manual override setpoint of the first heating circuit
@@ -81,7 +81,7 @@ r,,ASCDetected,ASCDetected,,,,"BB00",,,yesno,,,indicates that a VMS has been det
 r,,VF1,VF_1,,,,"7600",,,tempsensor,,,current external flow temperature and sensorstate
 r,,HydraulicMap,HydraulicMap,,,,"1800",,,UCH,,,"hydraulic map (0 = H1, 3 = H4, 11 = A1, 12 = A2, 14 = A5, 15 = S1, 16 = S3a, 17 = S3b)"
 r,,ActualRoomTempDesiredHc1,ActualRoomTempSetpointHC1,,,,"6300",,,temp,,,current room setpoint considering all basic conditions passed to the control algorithms
-r,,Hc2OPMode,HC2_OPMode,,,,"1B00",,,UCH,2=auto;3=on;4=night;5=summer,,operation mode of the second heating circuit
+r;w,,Hc2OPMode,HC2_OPMode,,,,"1B00",,,UCH,0=off;1=manual;2=auto;3=on;4=night;5=summer,,operation mode of the second heating circuit
 r,,Hc2TempDesiredB50418,HC2_Desired_TempB50418,,,,"3200",,,temp1,,,current flow temperature setpoint of the second heating circuit
 r,,B51000M7OpModeMonitor,B51000M7OpModeMonitor,,,,"6500",,,UCH,,,"operation mode sent via B5 10 00 (0 = auto, 1 = forced off, 2 = forced CH, 3 = forced DHW)"
 r,,B51000M8HeatFlowSetMonitor,B51000M8HeatFlowSetMonitor,,,,"8D00",,,D1C,,,flow temperature setpoint sent via B5 10 00 to the BMU
